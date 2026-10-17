@@ -1,4 +1,4 @@
-/* Colours are taken from the school badge and the 100 Club poster. */
+/* Colours are taken from the school badge. */
 :root {
   --navy: #0b4c89;
   --blue: #115b9b;
@@ -89,12 +89,6 @@ section { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
 .panel h2, .panel h3 { margin-bottom: .3rem; }
 .panel p { margin: 0; max-width: 640px; color: var(--muted); }
 .panel .btn { flex-shrink: 0; }
-.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; }
-.fact { background: var(--paper); border: 2px solid var(--blue); border-radius: var(--radius); padding: 1.4rem; text-align: center; }
-.fact .label { text-transform: uppercase; letter-spacing: .1em; font-weight: 800; color: var(--green-dark); font-size: .9rem; }
-.fact .big { font-family: var(--round); font-size: 2.4rem; font-weight: 800; color: var(--navy); line-height: 1.2; }
-.fact p { margin: .2rem 0 0; color: var(--muted); }
-.notice { background: #fff8e1; border-left: 5px solid #f2b400; border-radius: 10px; padding: 1rem 1.2rem; margin: 0 0 1.5rem; }
 .tip { background: var(--sky); border-radius: var(--radius); padding: 1rem 1.2rem; border-left: 5px solid var(--blue); }
 .cta-band { background: var(--green-dark); color: #fff; text-align: center; }
 .cta-band h2 { color: #fff; }
@@ -141,4 +135,6 @@ section { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
   .brand .hide-sm { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
-.notice:empty { display: none; }
+section[id] { scroll-margin-top: 80px; }
+.cta-band .small { font-size: .95rem; opacity: .92; }
+.tip h3 { margin-top: 0; }

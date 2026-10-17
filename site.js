@@ -12,7 +12,7 @@
     if (val === "" && el.hasAttribute("data-hide-if-empty")) el.style.display = "none";
   });
 
-  // Links: <a data-href="hundredClubJoinUrl">
+  // Links: <a data-href="facebook">
   $all("[data-href]").forEach(function (el) {
     var key = el.getAttribute("data-href");
     var val = C[key];
@@ -32,8 +32,14 @@
   // Mobile menu
   var btn = document.querySelector(".menu-toggle");
   var nav = document.querySelector(".site-nav");
-  if (btn && nav) btn.addEventListener("click", function () {
-    var open = nav.classList.toggle("open");
-    btn.setAttribute("aria-expanded", open ? "true" : "false");
-  });
+  if (btn && nav) {
+    btn.addEventListener("click", function () {
+      var open = nav.classList.toggle("open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    // Close the menu after tapping a link (the links jump down the page)
+    nav.addEventListener("click", function (e) {
+      if (e.target.tagName === "A") { nav.classList.remove("open"); btn.setAttribute("aria-expanded", "false"); }
+    });
+  }
 })();
