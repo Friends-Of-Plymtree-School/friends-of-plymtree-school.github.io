@@ -34,7 +34,7 @@ h3 { font-size: 1.25rem; }
 .site-header { background: var(--paper); border-bottom: 4px solid var(--green); position: sticky; top: 0; z-index: 10; }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .5rem 0; position: relative; }
 .brand { display: flex; align-items: center; gap: .7rem; text-decoration: none; color: var(--navy); }
-.brand img { height: 60px; width: 60px; }
+.brand img { height: 56px; width: auto; }
 .brand > span { font-family: var(--round); font-weight: 700; font-size: 1.15rem; line-height: 1.15; }
 .brand small { display: block; font-weight: 600; font-size: .8rem; color: var(--green-dark); letter-spacing: .06em; text-transform: uppercase; }
 .site-nav ul { list-style: none; display: flex; gap: .2rem; margin: 0; padding: 0; align-items: center; }
@@ -130,7 +130,7 @@ section { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
   .hero .wrap, .split, .footer-grid { grid-template-columns: 1fr; }
   .hero .badge { max-width: 180px; order: -1; }
   .panel { flex-direction: column; align-items: flex-start; }
-  .brand img { height: 50px; width: 50px; }
+  .brand img { height: 44px; width: auto; }
   .brand > span { font-size: 1rem; }
   .brand .hide-sm { display: none; }
 }
