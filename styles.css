@@ -138,3 +138,13 @@ section { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
 section[id] { scroll-margin-top: 80px; }
 .cta-band .small { font-size: .95rem; opacity: .92; }
 .tip h3 { margin-top: 0; }
+
+/* Newsletter */
+.newsletter { display: grid; grid-template-columns: minmax(180px, 280px) 1fr; gap: 2.5rem; align-items: start; margin-top: 1.5rem; }
+.nl-cover img { width: 100%; height: auto; display: block; border-radius: 10px; box-shadow: 0 8px 28px rgba(11,76,137,.18); transition: transform .15s; }
+.nl-cover:hover img { transform: translateY(-3px); }
+.nl-text h3 { margin-top: 0; }
+.nl-text ul { padding-left: 1.2rem; }
+.nl-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.25rem; }
+.nl-note { font-size: .9rem; opacity: .75; }
+@media (max-width: 700px) { .newsletter { grid-template-columns: 1fr; } .nl-cover { max-width: 240px; margin: 0 auto; } }
